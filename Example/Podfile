@@ -1,0 +1,13 @@
+use_frameworks!
+
+target 'CMP_Example' do
+  pod 'CMP', :path => '../'
+
+  target 'CMP_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
+
+
